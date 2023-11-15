@@ -1,0 +1,1 @@
+-I"D:/university/TrustedSoftwareDevelopment/Programs/cpp-training/include" -isystem "D:/university/TrustedSoftwareDevelopment/Programs/cpp-training/tests/googletest/googletest/include" -isystem "D:/university/TrustedSoftwareDevelopment/Programs/cpp-training/tests/googletest/googletest"
