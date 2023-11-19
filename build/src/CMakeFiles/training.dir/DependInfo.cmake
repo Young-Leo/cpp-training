@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/university/TrustedSoftwareDevelopment/Programs/cpp-training/src/hello.cpp" "src/CMakeFiles/training.dir/hello.cpp.obj" "gcc" "src/CMakeFiles/training.dir/hello.cpp.obj.d"
+  "D:/university/TrustedSoftwareDevelopment/Programs/cpp-training/src/PriceCalculator.cpp" "src/CMakeFiles/training.dir/PriceCalculator.cpp.obj" "gcc" "src/CMakeFiles/training.dir/PriceCalculator.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

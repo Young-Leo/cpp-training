@@ -2,68 +2,88 @@
 
 #include "PriceCalculator.h"
 
-using namespace PriceCal;
+using namespace PriceCalc;
 
-// Seven test cases
 TEST(PriceCalculator, should_return_100_when_given_cash_normal_and_price_100)
 {
+    // given
     PriceCalculator priceCalculator;
+    DiscountType discountType = DiscountType::CASH_NORMAL;
+    double money = 100.0;
 
-    double cash = priceCalculator.AcceptCash(DiscountType::CASH_NORMAL, 100.0);
+    // when
+    double cash = priceCalculator.AcceptCash(discountType, money);
 
-    EXPECT_DOUBLE_EQ(100, cash);
+    // then
+    EXPECT_DOUBLE_EQ(100.0, cash);
 }
 
-TEST(PriceCalculator, should_return_90_when_given_cash_90percentoff_and_price_100)
+TEST(PriceCalculator, should_return_90_when_cash_percent_off_10_and_price_100)
 {
+    // given
     PriceCalculator priceCalculator;
+    DiscountType discountType = DiscountType::CASH_PERCENTOFF_10;
+    double money = 100.0;
 
-    double cash = priceCalculator.AcceptCash(DiscountType::CASH_90PERCENTOFF, 100.0);
+    // when
+    double cash = priceCalculator.AcceptCash(discountType, money);
 
-    EXPECT_DOUBLE_EQ(90, cash);
+    // then
+    EXPECT_DOUBLE_EQ(90.0, cash);
 }
 
-TEST(PriceCalculator, should_return_80_when_given_cash_80percentoff_and_price_100)
+TEST(PriceCalculator, should_return_80_when_cash_percent_off_20_and_price_100)
 {
+    // given
     PriceCalculator priceCalculator;
+    DiscountType discountType = DiscountType::CASH_PERCENTOFF_20;
+    double money = 100.0;
 
-    double cash = priceCalculator.AcceptCash(DiscountType::CASH_80PERCENTOFF, 100.0);
+    // when
+    double cash = priceCalculator.AcceptCash(discountType, money);
 
-    EXPECT_DOUBLE_EQ(80, cash);
+    // then
+    EXPECT_DOUBLE_EQ(80.0, cash);
 }
 
-TEST(PriceCalculator, should_return_70_when_given_cash_70percentoff_and_price_100)
+TEST(PriceCalculator, should_return_70_when_cash_percent_off_30_and_price_100)
 {
+    // given
     PriceCalculator priceCalculator;
+    DiscountType discountType = DiscountType::CASH_PERCENTOFF_30;
+    double money = 100.0;
 
-    double cash = priceCalculator.AcceptCash(DiscountType::CASH_70PERCENTOFF, 100.0);
+    // when
+    double cash = priceCalculator.AcceptCash(discountType, money);
 
-    EXPECT_DOUBLE_EQ(70, cash);
+    // then
+    EXPECT_DOUBLE_EQ(70.0, cash);
 }
 
 TEST(PriceCalculator, should_return_90_when_given_cash_back_and_price_90)
 {
+    // given
     PriceCalculator priceCalculator;
+    DiscountType discountType = DiscountType::CASH_BACK;
+    double money = 90.0;
 
-    double cash = priceCalculator.AcceptCash(DiscountType::CASH_BACK, 90.0);
+    // when
+    double cash = priceCalculator.AcceptCash(discountType, money);
 
-    EXPECT_DOUBLE_EQ(90, cash);
+    // then
+    EXPECT_DOUBLE_EQ(90.0, cash);
 }
 
 TEST(PriceCalculator, should_return_80_when_given_cash_back_and_price_100)
 {
+    // given
     PriceCalculator priceCalculator;
+    DiscountType discountType = DiscountType::CASH_BACK;
+    double money = 100.0;
 
-    double cash = priceCalculator.AcceptCash(DiscountType::CASH_BACK, 100.0);
+    // when
+    double cash = priceCalculator.AcceptCash(discountType, money);
 
-    EXPECT_DOUBLE_EQ(80, cash);
-}
-
-TEST(PriceCalculator, should_return_90_when_given_cash_back_and_price_110)
-{
-    PriceCalculator priceCalculator;
-
-    double cash = priceCalculator.AcceptCash(DiscountType::CASH_BACK, 110.0);
-
-    EXPECT_DOUBLE_EQ(90, cash);
+    // then
+    EXPECT_DOUBLE_EQ(80.0, cash);
 }

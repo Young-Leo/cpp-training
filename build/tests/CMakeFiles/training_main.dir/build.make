@@ -68,29 +68,29 @@ include tests/CMakeFiles/training_main.dir/progress.make
 # Include the compile flags for this target's objects.
 include tests/CMakeFiles/training_main.dir/flags.make
 
-tests/CMakeFiles/training_main.dir/test.cpp.obj: tests/CMakeFiles/training_main.dir/flags.make
-tests/CMakeFiles/training_main.dir/test.cpp.obj: tests/CMakeFiles/training_main.dir/includes_CXX.rsp
-tests/CMakeFiles/training_main.dir/test.cpp.obj: D:/university/TrustedSoftwareDevelopment/Programs/cpp-training/tests/test.cpp
-tests/CMakeFiles/training_main.dir/test.cpp.obj: tests/CMakeFiles/training_main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/training_main.dir/test.cpp.obj"
-	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build\tests && D:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/training_main.dir/test.cpp.obj -MF CMakeFiles\training_main.dir\test.cpp.obj.d -o CMakeFiles\training_main.dir\test.cpp.obj -c D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\tests\test.cpp
+tests/CMakeFiles/training_main.dir/PriceCalculatorTest.cpp.obj: tests/CMakeFiles/training_main.dir/flags.make
+tests/CMakeFiles/training_main.dir/PriceCalculatorTest.cpp.obj: tests/CMakeFiles/training_main.dir/includes_CXX.rsp
+tests/CMakeFiles/training_main.dir/PriceCalculatorTest.cpp.obj: D:/university/TrustedSoftwareDevelopment/Programs/cpp-training/tests/PriceCalculatorTest.cpp
+tests/CMakeFiles/training_main.dir/PriceCalculatorTest.cpp.obj: tests/CMakeFiles/training_main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/training_main.dir/PriceCalculatorTest.cpp.obj"
+	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build\tests && D:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/training_main.dir/PriceCalculatorTest.cpp.obj -MF CMakeFiles\training_main.dir\PriceCalculatorTest.cpp.obj.d -o CMakeFiles\training_main.dir\PriceCalculatorTest.cpp.obj -c D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\tests\PriceCalculatorTest.cpp
 
-tests/CMakeFiles/training_main.dir/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/training_main.dir/test.cpp.i"
-	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build\tests && D:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\tests\test.cpp > CMakeFiles\training_main.dir\test.cpp.i
+tests/CMakeFiles/training_main.dir/PriceCalculatorTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/training_main.dir/PriceCalculatorTest.cpp.i"
+	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build\tests && D:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\tests\PriceCalculatorTest.cpp > CMakeFiles\training_main.dir\PriceCalculatorTest.cpp.i
 
-tests/CMakeFiles/training_main.dir/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/training_main.dir/test.cpp.s"
-	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build\tests && D:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\tests\test.cpp -o CMakeFiles\training_main.dir\test.cpp.s
+tests/CMakeFiles/training_main.dir/PriceCalculatorTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/training_main.dir/PriceCalculatorTest.cpp.s"
+	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build\tests && D:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\tests\PriceCalculatorTest.cpp -o CMakeFiles\training_main.dir\PriceCalculatorTest.cpp.s
 
 # Object files for target training_main
 training_main_OBJECTS = \
-"CMakeFiles/training_main.dir/test.cpp.obj"
+"CMakeFiles/training_main.dir/PriceCalculatorTest.cpp.obj"
 
 # External object files for target training_main
 training_main_EXTERNAL_OBJECTS =
 
-tests/training_main.exe: tests/CMakeFiles/training_main.dir/test.cpp.obj
+tests/training_main.exe: tests/CMakeFiles/training_main.dir/PriceCalculatorTest.cpp.obj
 tests/training_main.exe: tests/CMakeFiles/training_main.dir/build.make
 tests/training_main.exe: src/libtraining.a
 tests/training_main.exe: lib/libgtest_main.a

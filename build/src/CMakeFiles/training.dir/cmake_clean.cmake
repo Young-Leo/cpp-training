@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/training.dir/hello.cpp.obj"
-  "CMakeFiles/training.dir/hello.cpp.obj.d"
+  "CMakeFiles/training.dir/PriceCalculator.cpp.obj"
+  "CMakeFiles/training.dir/PriceCalculator.cpp.obj.d"
   "libtraining.a"
   "libtraining.pdb"
 )

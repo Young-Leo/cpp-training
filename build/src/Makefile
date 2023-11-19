@@ -184,29 +184,29 @@ training/fast:
 	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/build
 .PHONY : training/fast
 
-hello.obj: hello.cpp.obj
-.PHONY : hello.obj
+PriceCalculator.obj: PriceCalculator.cpp.obj
+.PHONY : PriceCalculator.obj
 
 # target to build an object file
-hello.cpp.obj:
-	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/hello.cpp.obj
-.PHONY : hello.cpp.obj
+PriceCalculator.cpp.obj:
+	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/PriceCalculator.cpp.obj
+.PHONY : PriceCalculator.cpp.obj
 
-hello.i: hello.cpp.i
-.PHONY : hello.i
+PriceCalculator.i: PriceCalculator.cpp.i
+.PHONY : PriceCalculator.i
 
 # target to preprocess a source file
-hello.cpp.i:
-	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/hello.cpp.i
-.PHONY : hello.cpp.i
+PriceCalculator.cpp.i:
+	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/PriceCalculator.cpp.i
+.PHONY : PriceCalculator.cpp.i
 
-hello.s: hello.cpp.s
-.PHONY : hello.s
+PriceCalculator.s: PriceCalculator.cpp.s
+.PHONY : PriceCalculator.s
 
 # target to generate assembly for a file
-hello.cpp.s:
-	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/hello.cpp.s
-.PHONY : hello.cpp.s
+PriceCalculator.cpp.s:
+	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/PriceCalculator.cpp.s
+.PHONY : PriceCalculator.cpp.s
 
 # Help Target
 help:
@@ -222,9 +222,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... test
 	@echo ... training
-	@echo ... hello.obj
-	@echo ... hello.i
-	@echo ... hello.s
+	@echo ... PriceCalculator.obj
+	@echo ... PriceCalculator.i
+	@echo ... PriceCalculator.s
 .PHONY : help
 
 

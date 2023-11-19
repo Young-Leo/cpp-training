@@ -184,29 +184,29 @@ training_main/fast:
 	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/build
 .PHONY : training_main/fast
 
-test.obj: test.cpp.obj
-.PHONY : test.obj
+PriceCalculatorTest.obj: PriceCalculatorTest.cpp.obj
+.PHONY : PriceCalculatorTest.obj
 
 # target to build an object file
-test.cpp.obj:
-	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/test.cpp.obj
-.PHONY : test.cpp.obj
+PriceCalculatorTest.cpp.obj:
+	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/PriceCalculatorTest.cpp.obj
+.PHONY : PriceCalculatorTest.cpp.obj
 
-test.i: test.cpp.i
-.PHONY : test.i
+PriceCalculatorTest.i: PriceCalculatorTest.cpp.i
+.PHONY : PriceCalculatorTest.i
 
 # target to preprocess a source file
-test.cpp.i:
-	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/test.cpp.i
-.PHONY : test.cpp.i
+PriceCalculatorTest.cpp.i:
+	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/PriceCalculatorTest.cpp.i
+.PHONY : PriceCalculatorTest.cpp.i
 
-test.s: test.cpp.s
-.PHONY : test.s
+PriceCalculatorTest.s: PriceCalculatorTest.cpp.s
+.PHONY : PriceCalculatorTest.s
 
 # target to generate assembly for a file
-test.cpp.s:
-	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/test.cpp.s
-.PHONY : test.cpp.s
+PriceCalculatorTest.cpp.s:
+	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/PriceCalculatorTest.cpp.s
+.PHONY : PriceCalculatorTest.cpp.s
 
 # Help Target
 help:
@@ -222,9 +222,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... test
 	@echo ... training_main
-	@echo ... test.obj
-	@echo ... test.i
-	@echo ... test.s
+	@echo ... PriceCalculatorTest.obj
+	@echo ... PriceCalculatorTest.i
+	@echo ... PriceCalculatorTest.s
 .PHONY : help
 
 
