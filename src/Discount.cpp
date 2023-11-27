@@ -15,10 +15,11 @@ namespace PriceCalc
     {
         return money * rate;
     }
+    CashBack::CashBack(const double threshold, const double cashback) : threshold(threshold), cashback(cashback)
+    {
+    }
     double CashBack::AcceptCash(const double money) const noexcept
     {
-        const double threshold = 100.0;
-        const double cashback = 20.0;
         return money - std::floor(money / threshold) * cashback;
     }
 }

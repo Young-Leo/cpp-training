@@ -28,6 +28,11 @@ namespace PriceCalc
     class CashBack final : public Discount
     {
     public:
+        explicit CashBack(const double threshold, const double cashback);
         double AcceptCash(const double money) const noexcept override;
+
+    private:
+        double threshold, cashback;
     };
+
 }
