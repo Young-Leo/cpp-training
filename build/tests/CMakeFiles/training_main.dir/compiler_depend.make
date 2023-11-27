@@ -230,6 +230,7 @@ tests/CMakeFiles/training_main.dir/PriceCalculatorTest.cpp.obj: D:/university/Tr
   D:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
   D:/mingw64/x86_64-w64-mingw32/include/wchar.h \
   D:/mingw64/x86_64-w64-mingw32/include/wctype.h \
+  D:/university/TrustedSoftwareDevelopment/Programs/cpp-training/include/Discount.h \
   D:/university/TrustedSoftwareDevelopment/Programs/cpp-training/include/PriceCalculator.h \
   D:/university/TrustedSoftwareDevelopment/Programs/cpp-training/tests/googletest/googletest/include/gtest/gtest-assertion-result.h \
   D:/university/TrustedSoftwareDevelopment/Programs/cpp-training/tests/googletest/googletest/include/gtest/gtest-death-test.h \
@@ -729,6 +730,8 @@ D:/mingw64/x86_64-w64-mingw32/include/vadefs.h:
 D:/mingw64/x86_64-w64-mingw32/include/wchar.h:
 
 D:/mingw64/x86_64-w64-mingw32/include/wctype.h:
+
+D:/university/TrustedSoftwareDevelopment/Programs/cpp-training/include/Discount.h:
 
 D:/university/TrustedSoftwareDevelopment/Programs/cpp-training/tests/googletest/googletest/include/gtest/gtest-death-test.h:
 

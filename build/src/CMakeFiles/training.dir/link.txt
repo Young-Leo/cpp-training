@@ -1,2 +1,2 @@
-D:\mingw64\bin\ar.exe qc libtraining.a CMakeFiles/training.dir/PriceCalculator.cpp.obj
+D:\mingw64\bin\ar.exe qc libtraining.a CMakeFiles/training.dir/Discount.cpp.obj CMakeFiles/training.dir/PriceCalculator.cpp.obj
 D:\mingw64\bin\ranlib.exe libtraining.a

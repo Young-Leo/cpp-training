@@ -68,11 +68,26 @@ include src/CMakeFiles/training.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/training.dir/flags.make
 
+src/CMakeFiles/training.dir/Discount.cpp.obj: src/CMakeFiles/training.dir/flags.make
+src/CMakeFiles/training.dir/Discount.cpp.obj: src/CMakeFiles/training.dir/includes_CXX.rsp
+src/CMakeFiles/training.dir/Discount.cpp.obj: D:/university/TrustedSoftwareDevelopment/Programs/cpp-training/src/Discount.cpp
+src/CMakeFiles/training.dir/Discount.cpp.obj: src/CMakeFiles/training.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/training.dir/Discount.cpp.obj"
+	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build\src && D:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/training.dir/Discount.cpp.obj -MF CMakeFiles\training.dir\Discount.cpp.obj.d -o CMakeFiles\training.dir\Discount.cpp.obj -c D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\src\Discount.cpp
+
+src/CMakeFiles/training.dir/Discount.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/training.dir/Discount.cpp.i"
+	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build\src && D:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\src\Discount.cpp > CMakeFiles\training.dir\Discount.cpp.i
+
+src/CMakeFiles/training.dir/Discount.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/training.dir/Discount.cpp.s"
+	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build\src && D:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\src\Discount.cpp -o CMakeFiles\training.dir\Discount.cpp.s
+
 src/CMakeFiles/training.dir/PriceCalculator.cpp.obj: src/CMakeFiles/training.dir/flags.make
 src/CMakeFiles/training.dir/PriceCalculator.cpp.obj: src/CMakeFiles/training.dir/includes_CXX.rsp
 src/CMakeFiles/training.dir/PriceCalculator.cpp.obj: D:/university/TrustedSoftwareDevelopment/Programs/cpp-training/src/PriceCalculator.cpp
 src/CMakeFiles/training.dir/PriceCalculator.cpp.obj: src/CMakeFiles/training.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/training.dir/PriceCalculator.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/training.dir/PriceCalculator.cpp.obj"
 	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build\src && D:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/training.dir/PriceCalculator.cpp.obj -MF CMakeFiles\training.dir\PriceCalculator.cpp.obj.d -o CMakeFiles\training.dir\PriceCalculator.cpp.obj -c D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\src\PriceCalculator.cpp
 
 src/CMakeFiles/training.dir/PriceCalculator.cpp.i: cmake_force
@@ -85,15 +100,17 @@ src/CMakeFiles/training.dir/PriceCalculator.cpp.s: cmake_force
 
 # Object files for target training
 training_OBJECTS = \
+"CMakeFiles/training.dir/Discount.cpp.obj" \
 "CMakeFiles/training.dir/PriceCalculator.cpp.obj"
 
 # External object files for target training
 training_EXTERNAL_OBJECTS =
 
+src/libtraining.a: src/CMakeFiles/training.dir/Discount.cpp.obj
 src/libtraining.a: src/CMakeFiles/training.dir/PriceCalculator.cpp.obj
 src/libtraining.a: src/CMakeFiles/training.dir/build.make
 src/libtraining.a: src/CMakeFiles/training.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libtraining.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libtraining.a"
 	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build\src && $(CMAKE_COMMAND) -P CMakeFiles\training.dir\cmake_clean_target.cmake
 	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build\src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\training.dir\link.txt --verbose=$(VERBOSE)
 

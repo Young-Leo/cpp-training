@@ -87,4 +87,5 @@
     },
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
+    "C_Cpp.errorSquiggles": "disabled",
 }

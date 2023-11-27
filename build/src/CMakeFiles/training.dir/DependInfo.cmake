@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "D:/university/TrustedSoftwareDevelopment/Programs/cpp-training/src/Discount.cpp" "src/CMakeFiles/training.dir/Discount.cpp.obj" "gcc" "src/CMakeFiles/training.dir/Discount.cpp.obj.d"
   "D:/university/TrustedSoftwareDevelopment/Programs/cpp-training/src/PriceCalculator.cpp" "src/CMakeFiles/training.dir/PriceCalculator.cpp.obj" "gcc" "src/CMakeFiles/training.dir/PriceCalculator.cpp.obj.d"
   )
 

@@ -184,6 +184,30 @@ training/fast:
 	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/build
 .PHONY : training/fast
 
+Discount.obj: Discount.cpp.obj
+.PHONY : Discount.obj
+
+# target to build an object file
+Discount.cpp.obj:
+	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/Discount.cpp.obj
+.PHONY : Discount.cpp.obj
+
+Discount.i: Discount.cpp.i
+.PHONY : Discount.i
+
+# target to preprocess a source file
+Discount.cpp.i:
+	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/Discount.cpp.i
+.PHONY : Discount.cpp.i
+
+Discount.s: Discount.cpp.s
+.PHONY : Discount.s
+
+# target to generate assembly for a file
+Discount.cpp.s:
+	cd /d D:\university\TrustedSoftwareDevelopment\Programs\cpp-training\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/Discount.cpp.s
+.PHONY : Discount.cpp.s
+
 PriceCalculator.obj: PriceCalculator.cpp.obj
 .PHONY : PriceCalculator.obj
 
@@ -222,6 +246,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... test
 	@echo ... training
+	@echo ... Discount.obj
+	@echo ... Discount.i
+	@echo ... Discount.s
 	@echo ... PriceCalculator.obj
 	@echo ... PriceCalculator.i
 	@echo ... PriceCalculator.s
