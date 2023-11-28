@@ -6,30 +6,44 @@
 
 namespace PriceCalc
 {
+    class DiscountMap
+    {
+    public:
+        static DiscountMap &GetInstance()
+        {
+            static DiscountMap instance;
+            return instance;
+        }
+
+        std::function<double(const double)> &GetDiscount(const DiscountType discountType)
+        {
+            return discountMap[discountType];
+        }
+
+    private:
+        DiscountMap()
+        {
+            std::shared_ptr<Normal> normal = std::make_shared<Normal>();
+            normal->Reg(discountMap);
+
+            std::shared_ptr<PercentOff> percentoff10 = std::make_shared<PercentOff>(0.9);
+            percentoff10->Reg(discountMap);
+
+            std::shared_ptr<PercentOff> percentoff20 = std::make_shared<PercentOff>(0.8);
+            percentoff20->Reg(discountMap);
+
+            std::shared_ptr<PercentOff> percentoff30 = std::make_shared<PercentOff>(0.7);
+            percentoff30->Reg(discountMap);
+
+            std::shared_ptr<CashBack> cashback = std::make_shared<CashBack>(100.0, 20.0);
+            cashback->Reg(discountMap);
+        }
+
+        std::unordered_map<DiscountType, std::function<double(const double)>> discountMap;
+    };
+
     double PriceCalculator::AcceptCash(const DiscountType discountType, const double money) const noexcept
     {
-        std::unordered_map<DiscountType, std::function<double(const double)>> discountMap;
-        Normal normal;
-        normal.Reg(discountMap);
-
-        PercentOff percentoff10(0.9);
-        percentoff10.Reg(discountMap);
-
-        PercentOff percentoff20(0.8);
-        percentoff20.Reg(discountMap);
-
-        PercentOff percentoff30(0.7);
-        percentoff30.Reg(discountMap);
-
-        CashBack cashback(100, 20);
-        cashback.Reg(discountMap);
-        // discountMap.emplace(DiscountType::CASH_NORMAL, std::make_unique<Normal>());
-        // discountMap.emplace(DiscountType::CASH_PERCENTOFF_10, std::make_unique<PercentOff>(0.9));
-        // discountMap.emplace(DiscountType::CASH_PERCENTOFF_20, std::make_unique<PercentOff>(0.8));
-        // discountMap.emplace(DiscountType::CASH_PERCENTOFF_30, std::make_unique<PercentOff>(0.7));
-        // discountMap.emplace(DiscountType::CASH_BACK, std::make_unique<CashBack>(100, 20));
-
-        // return discountMap.find(discountType)->second->AcceptCash(money);
-        return discountMap.find(discountType)->second(money);
+        return DiscountMap::GetInstance().GetDiscount(discountType)(money);
     }
 } // namespace PriceCalc

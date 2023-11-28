@@ -1,5 +1,6 @@
 #pragma once
 
+#include <iostream>
 #include <cmath>
 #include <functional>
 #include <unordered_map>
@@ -15,20 +16,10 @@ enum class DiscountType
 
 namespace PriceCalc
 {
-    // class Discount
-    // {
-    // public:
-    //     virtual ~Discount(){};
-    //     virtual double AcceptCash(const double money) const noexcept = 0;
-    // };
 
     class Normal final
     {
     public:
-        // double AcceptCash(const double money) const noexcept override
-        // {
-        //     return money;
-        // }
         void Reg(std::unordered_map<DiscountType, std::function<double(const double)>> &discountMap)
         {
             std::function<double(const double)> acceptCash = [](const double money) noexcept
@@ -42,11 +33,8 @@ namespace PriceCalc
     public:
         explicit PercentOff(const double rate) : rate(rate)
         {
+            std::cout << "percent ctor" << std::endl;
         }
-        // double AcceptCash(const double money) const noexcept override
-        // {
-        //     return rate * money;
-        // }
         void Reg(std::unordered_map<DiscountType, std::function<double(const double)>> &discountMap)
         {
             std::function<double(const double)> acceptCash = [this](const double money) noexcept
@@ -66,22 +54,18 @@ namespace PriceCalc
     class CashBack final
     {
     public:
-        explicit CashBack(const double threshold, const double cashback) : threshold(threshold), cashback(cashback)
-        {
-        }
-        // double AcceptCash(const double money) const noexcept override
-        // {
-        //     return money - std::floor(money / threshold) * cashback;
-        // }
+        CashBack(double threshold, double cashback) : threshold(threshold), cashback(cashback) {}
+
         void Reg(std::unordered_map<DiscountType, std::function<double(const double)>> &discountMap)
         {
             std::function<double(const double)> acceptCash = [this](const double money) noexcept
-            { return money - std::floor(money / threshold) * cashback; };
+            {
+                return money - std::floor(money / threshold) * cashback;
+            };
             discountMap.emplace(DiscountType::CASH_BACK, acceptCash);
         }
 
     private:
         double threshold, cashback;
     };
-
 }
