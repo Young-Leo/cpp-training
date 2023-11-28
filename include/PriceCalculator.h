@@ -10,7 +10,6 @@ namespace PriceCalc
         double AcceptCash(const DiscountType discountType, const double money) const noexcept;
 
     private:
-        // friend class Discount;
         friend class Normal;
         friend class PercentOff;
         friend class CashBack;
