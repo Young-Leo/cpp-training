@@ -61,6 +61,7 @@ tests/CMakeFiles/training_main.dir/PriceCalculatorTest.cpp.obj: D:/university/Tr
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/shared_ptr.h \
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/shared_ptr_atomic.h \
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/shared_ptr_base.h \
+  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/specfun.h \
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/sstream.tcc \
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_function.h \
@@ -100,6 +101,7 @@ tests/CMakeFiles/training_main.dir/PriceCalculatorTest.cpp.obj: D:/university/Tr
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono \
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale \
+  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath \
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/condition_variable \
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstddef \
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint \
@@ -145,6 +147,18 @@ tests/CMakeFiles/training_main.dir/PriceCalculatorTest.cpp.obj: D:/university/Tr
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string \
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string_view \
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error \
+  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/bessel_function.tcc \
+  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/beta_function.tcc \
+  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/ell_integral.tcc \
+  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/exp_integral.tcc \
+  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/gamma.tcc \
+  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/hypergeometric.tcc \
+  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/legendre_function.tcc \
+  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/modified_bessel_func.tcc \
+  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_hermite.tcc \
+  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_laguerre.tcc \
+  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/riemann_zeta.tcc \
+  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/special_function_util.h \
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tuple \
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo \
@@ -188,6 +202,7 @@ tests/CMakeFiles/training_main.dir/PriceCalculatorTest.cpp.obj: D:/university/Tr
   D:/mingw64/x86_64-w64-mingw32/include/limits.h \
   D:/mingw64/x86_64-w64-mingw32/include/locale.h \
   D:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  D:/mingw64/x86_64-w64-mingw32/include/math.h \
   D:/mingw64/x86_64-w64-mingw32/include/process.h \
   D:/mingw64/x86_64-w64-mingw32/include/pthread.h \
   D:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
@@ -314,6 +329,8 @@ D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/memory:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h:
 
+D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/legendre_function.tcc:
+
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.tcc:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:
@@ -400,6 +417,8 @@ D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/shared_ptr.h:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/shared_ptr_atomic.h:
 
+D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/specfun.h:
+
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/sstream.tcc:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h:
@@ -456,6 +475,8 @@ D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stream_iterator.h:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc:
 
+D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/riemann_zeta.tcc:
+
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf_iterator.h:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/set:
@@ -472,6 +493,8 @@ D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uniform_int_dist.h:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unordered_map.h:
 
+D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/beta_function.tcc:
+
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cassert:
@@ -484,6 +507,12 @@ D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale:
 
+D:/mingw64/x86_64-w64-mingw32/include/stdio.h:
+
+D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cxxabi.h:
+
+D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath:
+
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstddef:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint:
@@ -495,10 +524,6 @@ D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime:
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwctype:
-
-D:/mingw64/x86_64-w64-mingw32/include/stdio.h:
-
-D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cxxabi.h:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h:
 
@@ -559,6 +584,26 @@ D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/streambuf:
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string_view:
+
+D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/bessel_function.tcc:
+
+D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/ell_integral.tcc:
+
+D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/exp_integral.tcc:
+
+D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/modified_bessel_func.tcc:
+
+D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/gamma.tcc:
+
+D:/university/TrustedSoftwareDevelopment/Programs/cpp-training/tests/googletest/googletest/include/gtest/gtest-param-test.h:
+
+D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/hypergeometric.tcc:
+
+D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_hermite.tcc:
+
+D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_laguerre.tcc:
+
+D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/special_function_util.h:
 
 D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo:
 
@@ -636,6 +681,8 @@ D:/mingw64/x86_64-w64-mingw32/include/locale.h:
 
 D:/mingw64/x86_64-w64-mingw32/include/malloc.h:
 
+D:/mingw64/x86_64-w64-mingw32/include/math.h:
+
 D:/mingw64/x86_64-w64-mingw32/include/process.h:
 
 D:/mingw64/x86_64-w64-mingw32/include/pthread.h:
@@ -687,8 +734,6 @@ D:/mingw64/x86_64-w64-mingw32/include/wctype.h:
 D:/university/TrustedSoftwareDevelopment/Programs/cpp-training/include/Discount.h:
 
 D:/university/TrustedSoftwareDevelopment/Programs/cpp-training/tests/googletest/googletest/include/gtest/gtest-death-test.h:
-
-D:/university/TrustedSoftwareDevelopment/Programs/cpp-training/tests/googletest/googletest/include/gtest/gtest-param-test.h:
 
 D:/university/TrustedSoftwareDevelopment/Programs/cpp-training/tests/googletest/googletest/include/gtest/gtest-printers.h:
 
