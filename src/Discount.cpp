@@ -35,4 +35,33 @@ namespace PriceCalc
         };
         discountMap.emplace(DiscountType::CASH_BACK, acceptCash);
     }
+
+    DiscountMap &DiscountMap::GetInstance()
+    {
+        static DiscountMap instance;
+        return instance;
+    }
+
+    std::function<double(const double)> &DiscountMap::GetDiscount(const DiscountType discountType)
+    {
+        return discountMap[discountType];
+    }
+
+    DiscountMap::DiscountMap()
+    {
+        std::shared_ptr<Normal> normal = std::make_shared<Normal>();
+        normal->Reg(discountMap);
+
+        std::shared_ptr<PercentOff> percentoff10 = std::make_shared<PercentOff>(0.9);
+        percentoff10->Reg(discountMap);
+
+        std::shared_ptr<PercentOff> percentoff20 = std::make_shared<PercentOff>(0.8);
+        percentoff20->Reg(discountMap);
+
+        std::shared_ptr<PercentOff> percentoff30 = std::make_shared<PercentOff>(0.7);
+        percentoff30->Reg(discountMap);
+
+        std::shared_ptr<CashBack> cashback = std::make_shared<CashBack>(100.0, 20.0);
+        cashback->Reg(discountMap);
+    }
 }

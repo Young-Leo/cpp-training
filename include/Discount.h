@@ -1,9 +1,8 @@
 #pragma once
 
-#include <iostream>
-#include <cmath>
 #include <functional>
 #include <unordered_map>
+#include <memory>
 
 enum class DiscountType
 {
@@ -41,5 +40,16 @@ namespace PriceCalc
 
     private:
         double threshold, cashback;
+    };
+
+    class DiscountMap final
+    {
+    public:
+        static DiscountMap &GetInstance();
+        std::function<double(const double)> &GetDiscount(const DiscountType discountType);
+
+    private:
+        DiscountMap();
+        std::unordered_map<DiscountType, std::function<double(const double)>> discountMap;
     };
 }
